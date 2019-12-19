@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MathGameApp</string>
+    <string name="shoping">SHOPING</string>
+    <string name="label_tiempo">Ezberleme Zamanı : </string>
+    <string name="label_chronometro_2_seg">2000</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

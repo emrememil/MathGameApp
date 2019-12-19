@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC59A1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_extra_sure"
+        android:layout_width="118dp"
+        android:layout_height="74dp"
+        android:background="@drawable/corner"
+
+        android:fontFamily="@font/bangers"
+        android:text="Extra Süre"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDDA47"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_secenekleri_ele"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_secenekleri_ele"
+        android:layout_width="118dp"
+        android:layout_height="74dp"
+        android:background="@drawable/corner"
+        android:fontFamily="@font/bangers"
+
+        android:text="Seçeneleri Ele"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDDA47"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_extra_sure"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_soruyu_atla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/corner"
+
+        android:fontFamily="serif-monospace"
+        android:text="65"
+        android:textColor="#FDDA47"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_soru" />
+
+    <TextView
+        android:id="@+id/tv_coin_shop"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/bangers"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FDDA47"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/pb_timer" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coins" />
+
+    <Button
+        android:id="@+id/btn_answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/corner"
+        android:fontFamily="serif-monospace"
+
+        android:text="65"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDDA47"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_answer2"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_soru" />
+
+    <ProgressBar
+        android:id="@+id/pb_timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:fontFamily="serif-monospace"
+        android:text="65"
+
+        android:textColor="#FDDA47"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_answer2"
+        app:layout_constraintTop_toTopOf="@+id/btn_answer3" />
+
+    <Button
+        android:id="@+id/btn_answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/corner"
+        android:fontFamily="serif-monospace"
+
+        android:text="65"
+        android:textColor="#FDDA47"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_answer4"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_answer1" />
+
+    <TextView
+        android:id="@+id/txt_soru"
+        android:layout_width="321dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="serif-monospace"
+        android:text="7 + 8 "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="161dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_coin_shop"
+        app:srcCompat="@drawable/i1" />
+
+    <Button
+        android:id="@+id/btn_soruyu_atla"
+        android:layout_width="118dp"
+        android:layout_height="74dp"
+        android:background="@drawable/corner"
+        android:fontFamily="@font/bangers"
+        android:text="Soruyu Atla"
+
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDDA47"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_secenekleri_ele"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Level:"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_timer" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="1"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="/ 10"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_level"
+        app:layout_constraintTop_toTopOf="@+id/tv_level" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
