@@ -50,7 +50,7 @@
         android:background="@drawable/corner"
 
         android:fontFamily="serif-monospace"
-        android:text="65"
+        android:text="17"
         android:textColor="#FDDA47"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -67,8 +67,7 @@
         android:textColor="#FDDA47"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/pb_timer" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -88,7 +87,7 @@
         android:background="@drawable/corner"
         android:fontFamily="serif-monospace"
 
-        android:text="65"
+        android:text="15"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FDDA47"
@@ -103,7 +102,7 @@
         android:id="@+id/pb_timer"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -116,7 +115,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/corner"
         android:fontFamily="serif-monospace"
-        android:text="65"
+        android:text="19"
 
         android:textColor="#FDDA47"
         android:textSize="36sp"
@@ -132,7 +131,7 @@
         android:background="@drawable/corner"
         android:fontFamily="serif-monospace"
 
-        android:text="65"
+        android:text="12"
         android:textColor="#FDDA47"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -159,10 +158,9 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="161dp"
-        android:layout_height="145dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="134dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
         android:alpha="0.6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_coin_shop"

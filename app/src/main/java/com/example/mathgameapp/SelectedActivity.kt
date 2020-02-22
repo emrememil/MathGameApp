@@ -3,6 +3,7 @@ package com.example.mathgameapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mathgameapp.Problemler.Problemler
 import kotlinx.android.synthetic.main.activity_selected.*
 
 
@@ -19,6 +20,10 @@ class SelectedActivity : AppCompatActivity() {
 
         btn_hafiza.setOnClickListener {
             val intent=Intent(this@SelectedActivity, HafizaOyunu::class.java)
+            startActivity(intent)
+        }
+        btn_problem.setOnClickListener {
+            val intent=Intent(this@SelectedActivity, Problemler::class.java)
             startActivity(intent)
         }
     }

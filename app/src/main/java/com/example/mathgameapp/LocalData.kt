@@ -8,24 +8,28 @@ class LocalData {
 
         init {
 
-            listFullCards.add(CardItem(R.drawable.multiply, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.division,R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.plus, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.percentage, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.buyuktur, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.kucuktur, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.equal, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.like, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.search,R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.star, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.play, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.smartwatch, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.hold, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.diamond, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.music, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.camera, R.drawable.question, false))
 
 
 
 
-            listFullCards.add(CardItem(R.drawable.multiply, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.division, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.plus, R.drawable.question,false))
-            listFullCards.add(CardItem(R.drawable.percentage, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.buyuktur, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.kucuktur, R.drawable.question, false))
-            listFullCards.add(CardItem(R.drawable.equal, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.like, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.search, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.star, R.drawable.question,false))
+            listFullCards.add(CardItem(R.drawable.play, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.smartwatch, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.hold, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.diamond, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.music, R.drawable.question, false))
+            listFullCards.add(CardItem(R.drawable.camera, R.drawable.question, false))
 
 
             listFullCards.shuffle()

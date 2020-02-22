@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.mathgameapp.DBHelper.DBHelper
+import com.example.mathgameapp.Fragments.LevelUpdate
 import com.example.mathgameapp.Fragments.Sonuc
 import com.example.mathgameapp.Model.Shopping
 import kotlinx.android.synthetic.main.activity_main.*
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         db= DBHelper(this)
         lstBilgiler=db.tumBilgiler
@@ -178,6 +181,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 else{
                     if (dogruSayisi>4){
                         ++level
+                        ShowFragment()
                         dogruSayisi=0
                         tv_level.text=level.toString()
                     }
@@ -276,6 +280,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    private fun ShowFragment() {
+        var levelUpdate= LevelUpdate()
+
+        levelUpdate.show(supportFragmentManager,"updategoster")
+        levelUpdate.seviye=level
+
+    }
+
     private fun coinBelirle(coinGelisimi: Int) {
         when(coinGelisimi){
             0-> coin+=50
@@ -289,18 +301,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun sureBelirle(sureGelisimi: Int) {
-        when(level){
-            0 -> progbar2(5+sureGelisimi)
-            1 -> progbar2(10+sureGelisimi)
-            2 -> progbar2(15+sureGelisimi)
-            3 -> progbar2(20+sureGelisimi)
-            4 -> progbar2(20+sureGelisimi)
-            5 -> progbar2(25+sureGelisimi)
-            6 -> progbar2(25+sureGelisimi)
-            7 -> progbar2(25+sureGelisimi)
-            8 -> progbar2(25+sureGelisimi)
-            9 -> progbar2(25+sureGelisimi)
-            10 -> progbar2(25+sureGelisimi)
+        when(level) {
+            0 -> progbar2(5 + sureGelisimi)
+            1 -> progbar2(10 + sureGelisimi)
+            2 -> progbar2(15 + sureGelisimi)
+            3 -> progbar2(20 + sureGelisimi)
+            4 -> progbar2(20 + sureGelisimi)
+            5 -> progbar2(25 + sureGelisimi)
+            6 -> progbar2(25 + sureGelisimi)
+            7 -> progbar2(25 + sureGelisimi)
+            8 -> progbar2(25 + sureGelisimi)
+            9 -> progbar2(25 + sureGelisimi)
+            10 -> progbar2(25 + sureGelisimi)
 
         }
     }

@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
-        android:text="Sorularda sana tanına süre %10 daha artacak!"
+        android:text="Sorularda sana tanınan süre %10 daha artacak!"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"

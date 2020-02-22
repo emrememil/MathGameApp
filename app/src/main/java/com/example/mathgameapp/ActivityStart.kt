@@ -13,8 +13,8 @@ class ActivityStart : AppCompatActivity() {
 
         btn_go.setOnClickListener {
 
-        val intent=Intent(this@ActivityStart,activity_information::class.java)
-        startActivity(intent)
+            val intent= Intent(this@ActivityStart,SelectedActivity::class.java)
+            startActivity(intent)
 
         }
 

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Shop"></activity>
+        <activity android:name=".Problemler.Problemler"></activity>
+        <activity android:name=".Shop" />
         <activity android:name=".HafizaOyunu" />
         <activity android:name=".SelectedActivity" />
         <activity android:name=".activity_information" />

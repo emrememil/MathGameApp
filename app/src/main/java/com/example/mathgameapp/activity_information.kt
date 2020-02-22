@@ -12,8 +12,7 @@ class activity_information : AppCompatActivity() {
         setContentView(R.layout.activity_information)
 
         btn_submit.setOnClickListener {
-            val intent= Intent(this@activity_information,SelectedActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }
